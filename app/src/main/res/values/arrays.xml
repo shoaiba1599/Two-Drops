@@ -2,6 +2,7 @@
 <resources>
     <string-array name="cities">
         <item>Sialkot</item>
+        <item>Karachi</item>
     </string-array>
     <string-array name="areas">
         <item>Adalatgarh</item>
@@ -15,6 +16,7 @@
         <item>Hundal</item>
         <item>Imam Sahib</item>
         <item>Model Town</item>
+        <item>Malir</item>
         <item>Rangpura</item>
         <item>Shahabpura</item>
         <item>Ugoki</item>
