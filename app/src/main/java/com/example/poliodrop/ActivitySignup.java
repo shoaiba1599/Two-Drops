@@ -24,6 +24,7 @@ import java.util.Map;
 
 public class ActivitySignup extends AppCompatActivity {
 
+
     EditText txtEmail,txtPassword,txtConfirmPassword,txtName,txtPhone, txtNicNumber;
     ProgressDialog progressDialog;
     FirebaseAuth maAuth;
