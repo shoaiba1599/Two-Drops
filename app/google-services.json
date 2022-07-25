@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "902036069133",
+    "project_id": "two-drops-7c011",
+    "storage_bucket": "two-drops-7c011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902036069133:android:5aef0e552b2b1e0905ae44",
+        "android_client_info": {
+          "package_name": "com.example.poliodrop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902036069133-ltcbcgb4knmtl2khkbjrq2551eacj4o9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.poliodrop",
+            "certificate_hash": "799f1be1c93cb19b89299d0d331dbc8e8e5fa49a"
+          }
+        },
+        {
+          "client_id": "902036069133-ssu7v44vu2l5hkl596qb6ne9k59tg7bv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5NAZ-M4LonwTIOh8UlwDfGYmdYAnRqvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902036069133-ssu7v44vu2l5hkl596qb6ne9k59tg7bv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

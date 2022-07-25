@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:cardBackgroundColor="@color/white"
+
+        app:cardCornerRadius="0dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+
+        app:cardPreventCornerOverlap="true"
+
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+      <!--  <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:visibility="gone"
+            app:civ_border_color="#252020"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="@color/colorAccent" />-->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tvDate"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Zeeshan Rehmat"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Request Area"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="-Phonr"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvChilds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPhone"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="No. Of Childs"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/parent_approval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChilds"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Approved by Parent:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/parent_approve_notApprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Not Approved"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/worker_approval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/parent_approval"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvArea"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="Approved by Worker:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/worker_approve_notApprove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvArea"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="Not Approved"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/worker_approval"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvArea"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="Status:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvArea"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="status"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="Worker Name:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/worker_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/last_vaccine_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/worker"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="Last vaccination:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/last_vaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/next_schedule_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/last_vaccine_item"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="Next Vaccination Schedule:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/next_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/acumin_r_pro"
+                android:text="date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+  <!--  <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/worker_approval"
+        android:orientation="horizontal"
+        android:weightSum="1">-->
+
+      <!--  <Button
+
+            android:id="@+id/btnStatus"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".4"
+            android:background="#7CB342"
+            android:text="Status"
+            android:textColor="@color/white"></Button>-->
+
+        <Button
+
+            android:id="@+id/btnAssign"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/next_schedule_item"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".6"
+            android:background="@color/colorPrimary"
+            android:text="Assign to worker"
+            android:textColor="#212121" />
+   <!-- </LinearLayout>-->
+
+
+        <Button
+            android:id="@+id/btn_vaccinated"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/btnAssign"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".4"
+            android:background="#7CB342"
+            android:text="Vaccinated"
+            android:textColor="#4E342E"></Button>
+
+        <Button
+            android:id="@+id/btn_detail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/btn_vaccinated"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".4"
+            android:background="#7CB342"
+            android:text="View Detail"
+            android:textColor="#4E342E"></Button>
+
+        <Button
+            android:id="@+id/btn_reassign"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/btn_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".4"
+            android:visibility="gone"
+            android:background="#7CB342"
+            android:text="Re-Request"
+            android:textColor="@color/white"></Button>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/btn_detail"
+        android:layout_margin="10dp"
+        android:background="@color/gray" />
+</RelativeLayout></androidx.cardview.widget.CardView></RelativeLayout>

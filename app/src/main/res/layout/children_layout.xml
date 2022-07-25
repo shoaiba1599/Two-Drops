@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/childNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Number: "
+            android:fontFamily="@font/acumin_r_pro"
+            android:textColor="@color/colorPrimary"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Name: "
+            android:fontFamily="@font/acumin_r_pro"
+            android:textColor="@color/colorPrimary"></TextView>
+
+        <TextView
+            android:id="@+id/child_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="child name"
+            android:textSize="16dp" />
+
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Age: "
+            android:fontFamily="@font/acumin_r_pro"
+            android:textColor="@color/colorPrimary"></TextView>
+
+        <TextView
+            android:id="@+id/child_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="child age"
+            android:textSize="16dp" />
+
+         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_child_delete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".4"
+            android:background="#7CB342"
+            android:text="Delete Child"
+            android:textColor="@color/white"></Button>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

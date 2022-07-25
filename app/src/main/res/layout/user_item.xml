@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="0dp"
+
+        android:layout_margin="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+
+        app:cardPreventCornerOverlap="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_centerHorizontal="true"
+                app:civ_border_width="2dp"
+                android:visibility="gone"
+                android:layout_margin="10dp"
+                app:civ_circle_background_color="@color/colorAccent"
+                app:civ_border_color="#252020"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zeeshan Rehmat"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvTitle"
+                android:fontFamily="@font/acumin_r_pro"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area 1"
+                android:layout_below="@id/tvTitle"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/tvArea"
+                android:fontFamily="@font/acumin_r_pro"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gujranwala"
+                android:layout_below="@id/tvArea"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/tvCity"
+                android:fontFamily="@font/acumin_r_pro"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="contact"
+                android:layout_below="@id/tvCity"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/tvContact"
+                android:fontFamily="@font/acumin_r_pro"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"/>
+
+            <Button
+
+                android:id="@+id/btnApproval"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/tvContact"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:text="Waiting For Approval"
+                android:textColor="#212121"></Button>
+
+            <Button
+
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/btnApproval"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:text="Delete Worker"
+                android:textColor="#212121"></Button>
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/btnDelete"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

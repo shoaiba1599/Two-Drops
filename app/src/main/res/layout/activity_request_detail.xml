@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvTitle_Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tvDate_Detail"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/acumin_r_pro"
+        android:text="Zeeshan Rehmat"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvArea_Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle_Detail"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/acumin_r_pro"
+        android:text="Request Area"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvPhone_Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvArea_Detail"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/acumin_r_pro"
+        android:text="-Phonr"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDate_Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/acumin_r_pro"
+        android:text="Date"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvChilds_Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPhone_Detail"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/acumin_r_pro"
+        android:text="No. Of Childs"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/parent_approval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChilds_Detail"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Approved by Parent:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/parent_approve_notApprove_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Not Approved"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/worker_approval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parent_approval"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Approved by Worker:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/worker_approve_notApprove_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Not Approved"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/worker_approval"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Status:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/tv_status_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArea"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="status"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/worker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Worker Name:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/worker_name_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/last_vaccine_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/worker"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Last vaccination:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/last_vaccine_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/next_schedule_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_vaccine_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="Next Vaccination Schedule:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/next_schedule_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/acumin_r_pro"
+            android:text="date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/children_view_Detail"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/next_schedule_item"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>

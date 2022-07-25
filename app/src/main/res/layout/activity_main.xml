@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo"
+        app:tint="@color/colorPrimary" />
+
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="15dp">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:inputType="textPassword"
+        android:hint="Password">
+
+    </EditText>
+    <!-- <RadioGroup
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:id="@+id/radioRole"
+         android:orientation="horizontal">
+         <androidx.appcompat.widget.AppCompatRadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/radioUser"
+             android:text="User"/>
+
+         <androidx.appcompat.widget.AppCompatRadioButton
+             android:id="@+id/radioWorker"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="30dp"
+             android:layout_gravity="end"
+             android:text="Polio Worker" />
+         <androidx.appcompat.widget.AppCompatRadioButton
+             android:id="@+id/radioAdmin"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="30dp"
+             android:layout_gravity="end"
+             android:text="Admin" />
+     </RadioGroup>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Login"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:id="@+id/btnLogin"></Button>
+    <TextView
+        android:id="@+id/linkSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="viewEnd"
+        android:text="Don't have an account?"/>
+
+</LinearLayout>

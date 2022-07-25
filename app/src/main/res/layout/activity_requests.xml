@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestsActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+
+        app:cardPreventCornerOverlap="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:id="@+id/lay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/acumin_r_pro"
+                    android:text="Submit New Request"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/acumin_r_pro"
+                        android:text="Total number of child:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/number_child"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/acumin_r_pro"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <!-- <EditText
+                     android:id="@+id/edtChild"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="No. of child below 5 year"
+
+                     android:inputType="text"
+                     android:textColor="@color/colorPrimary"
+                     android:layout_margin="10dp">
+
+                 </EditText>-->
+                <!--  <EditText
+                      android:id="@+id/edtContact"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="Contact No."
+
+                      android:inputType="text"
+                      android:textColor="@color/colorPrimary"
+                      android:layout_margin="10dp">
+
+                  </EditText>-->
+                <!--  <Spinner
+                      android:id="@+id/edtArea"
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:entries="@array/areas"
+                      android:textColor="@color/colorPrimary"
+                      android:layout_margin="10dp">
+
+                  </Spinner>
+                  <Spinner
+                      android:id="@+id/edtCity"
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:entries="@array/cities"
+                      android:textColor="@color/colorPrimary"
+                      android:layout_margin="10dp">
+
+                  </Spinner>
+                  <EditText
+                      android:id="@+id/edtDate"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="Date"
+                      android:focusable="false"
+
+                      android:inputType="text"
+                      android:textColor="@color/colorPrimary"
+                      android:layout_margin="10dp">
+
+                  </EditText>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtChildName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:hint="Child Name"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/edtChildAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:hint="Child Age"
+                        android:inputType="number"
+                        android:textColor="@color/colorPrimary" />
+                    <!-- <Button
+
+                         android:layout_width="0dp"
+                         android:layout_weight=".5"
+                         android:layout_height="match_parent"
+
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+
+
+                         android:text="Add"
+                         android:background="@color/colorPrimary"
+                         android:textColor="@color/white"
+                         android:id="@+id/btnAdd"></Button>-->
+
+                </LinearLayout>
+                <!-- <EditText
+                     android:id="@+id/edtChildDetails"
+                     android:layout_width="match_parent"
+                     android:layout_height="120dp"
+                     android:layout_margin="10dp"
+                     android:maxLength="21"
+
+
+                     android:gravity="top|left"
+                     android:maxLines="5"
+
+                     android:inputType="text|textMultiLine|textCapSentences"
+                     android:hint="Child's Details"/>
+                 <EditText
+                     android:id="@+id/edtAddress"
+                     android:layout_width="match_parent"
+                     android:layout_height="100dp"
+                     android:layout_margin="10dp"
+                     android:lines="10"
+                     android:minLines="5"
+                     android:gravity="top|left"
+                     android:maxLines="15"
+
+                     android:inputType="text"
+                     android:hint="Address"/>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btns"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/lay3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnAddChild"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/lay3"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="Add Child"
+                    android:textColor="@color/white"></Button>
+
+                <Button
+                    android:id="@+id/btnSendRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="Send Request"
+                    android:textColor="@color/white"></Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btns">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/children_view"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            />
+        <!--
+                <ProgressBar
+                    android:id="@+id/simplePb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="100dp"></ProgressBar>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

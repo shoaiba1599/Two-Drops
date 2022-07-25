@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>Sialkot</item>
+    </string-array>
+    <string-array name="areas">
+        <item>Adalatgarh</item>
+        <item>Ahmadpura</item>
+        <item>Doburji</item>
+        <item>Fathgarh</item>
+        <item>Gohad Pur</item>
+        <item>Gondal</item>
+        <item>Hajipura</item>
+        <item>Head Marala</item>
+        <item>Hundal</item>
+        <item>Imam Sahib</item>
+        <item>Model Town</item>
+        <item>Rangpura</item>
+        <item>Shahabpura</item>
+        <item>Ugoki</item>
+
+    </string-array>
+</resources>

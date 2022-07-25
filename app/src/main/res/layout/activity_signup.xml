@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ActivitySignup">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="50dp"
+       android:orientation="vertical"
+       android:gravity="center">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/title"
+           android:textColor="@color/colorPrimary"
+           android:textSize="30sp"
+           android:gravity="top"
+           android:layout_gravity="top"
+           android:visibility="gone"
+           android:fontFamily="@font/acumin_bd_it_pro"
+           android:text="Registration"/>
+
+       <EditText
+           android:id="@+id/edtName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Name"
+           android:inputType="text"
+           android:textColor="@color/colorPrimary"
+           android:layout_margin="10dp">
+
+       </EditText>
+
+       <EditText
+           android:id="@+id/edtNic"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Nic Number"
+           android:inputType="text"
+           android:textColor="@color/colorPrimary"
+           android:layout_margin="10dp">
+
+       </EditText>
+
+       <EditText
+           android:id="@+id/edtEmail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Email"
+           android:inputType="textEmailAddress"
+           android:textColor="@color/colorPrimary"
+           android:layout_margin="10dp">
+
+       </EditText>
+       <EditText
+           android:id="@+id/edtPhone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Phone"
+           android:inputType="phone"
+           android:textColor="@color/colorPrimary"
+           android:layout_margin="10dp">
+
+       </EditText>
+       <Spinner
+           android:id="@+id/edtArea"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:entries="@array/areas"
+           android:textColor="@color/colorPrimary"
+           android:layout_margin="10dp">
+
+       </Spinner>
+       <Spinner
+           android:id="@+id/edtCity"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:entries="@array/cities"
+           android:textColor="@color/colorPrimary"
+           android:layout_margin="10dp">
+
+       </Spinner>
+       <EditText
+           android:id="@+id/edtPassword"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10sp"
+           android:inputType="textPassword"
+           android:hint="Password"/>
+       <EditText
+           android:id="@+id/edtConfirmPassword"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10sp"
+           android:inputType="textPassword"
+           android:hint="Confirm Password">
+       </EditText>
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:id="@+id/radioRole"
+           android:orientation="horizontal">
+           <androidx.appcompat.widget.AppCompatRadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/radioUser"
+               android:text="User"/>
+
+           <androidx.appcompat.widget.AppCompatRadioButton
+               android:id="@+id/radioWorker"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_gravity="end"
+               android:text="Polio Worker" />
+           <androidx.appcompat.widget.AppCompatRadioButton
+               android:id="@+id/radioAdmin"
+               android:visibility="gone"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_gravity="end"
+               android:text="Admin" />
+       </RadioGroup>
+       <Button
+
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:text="Sign Up"
+           android:background="@color/colorPrimary"
+           android:textColor="@color/white"
+           android:id="@+id/btnSignup"></Button>
+       <TextView
+           android:id="@+id/linkSignIn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="15dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/colorPrimary"
+           android:textAlignment="viewEnd"
+           android:text="Already have an account?"/>
+   </LinearLayout>
+
+</ScrollView>
