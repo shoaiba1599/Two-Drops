@@ -27,12 +27,12 @@ public class AdminDashboard extends AppCompatActivity {
 
             }
         });
-       /* findViewById(R.id.cardUserRequests).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cardUserRequests).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(AdminDashboard.this,RequestList.class));
             }
-        });*/
+        });
 
        /* findViewById(R.id.contactSupport).setOnClickListener(new View.OnClickListener() {
             @Override
