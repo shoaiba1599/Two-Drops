@@ -42,7 +42,7 @@ public class AdminDashboard extends AppCompatActivity {
             }
         });*/
 
-       /* findViewById(R.id.scheduleRequestsAdmin).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.scheduleRequestsAdmin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), RequestList.class);
@@ -50,7 +50,7 @@ public class AdminDashboard extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });*/
+        });
 
 
     }

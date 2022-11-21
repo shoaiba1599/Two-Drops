@@ -32,13 +32,13 @@ public class WorkerDashboard extends AppCompatActivity {
         workerItems = findViewById(R.id.worker_items);
         adminApprove = findViewById(R.id.admin_approve);
 
-       /* findViewById(R.id.contactSupport).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.contactSupport).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(WorkerDashboard.this,ContactActivity.class));
 
             }
-        });*/
+        });
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Worker").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
               ;
@@ -69,14 +69,14 @@ public class WorkerDashboard extends AppCompatActivity {
             }
         });
 
-        /*findViewById(R.id.cardMyRequest).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cardMyRequest).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(WorkerDashboard.this, RequestList.class));
             }
-        });*/
+        });
 
-       /* findViewById(R.id.scheduleRequestsWorker).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.scheduleRequestsWorker).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), RequestList.class);
@@ -84,7 +84,7 @@ public class WorkerDashboard extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });*/
+        });
 
     }
 

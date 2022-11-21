@@ -24,23 +24,23 @@ public class UserDashboard extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),RequestsActivity.class));
             }
         });
-     /*   findViewById(R.id.contactSupport).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.contactSupport).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(UserDashboard.this,ContactActivity.class));
 
             }
-        });*/
+        });
 
-       /* findViewById(R.id.cardMyRequests).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cardMyRequests).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(UserDashboard.this,RequestList.class));
 
             }
-        });*/
+        });
 
-       /* findViewById(R.id.scheduleRequests).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.scheduleRequests).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), RequestList.class);
@@ -48,7 +48,7 @@ public class UserDashboard extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });*/
+        });
     }
 
 

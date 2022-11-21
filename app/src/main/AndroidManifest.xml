@@ -43,6 +43,9 @@
         <activity
             android:name=".RequestDetail"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
